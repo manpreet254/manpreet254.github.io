@@ -2,6 +2,9 @@
 date = '2025-07-29T15:59:21Z'
 draft = false
 title = 'First post'
+
+tags = ["Brain"]
+categories = ["Ayurveda"]
 +++
 
 # 🧠 Unlocking the Mysteries of the Human Brain

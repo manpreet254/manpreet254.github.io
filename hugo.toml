@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Dr Manpreet Singh'
 theme = 'DoIt'
 
+
 [params]
   # DoIt theme version
   version = "0.4.X"
@@ -11,7 +12,106 @@ theme = 'DoIt'
   description = "Dr Manpreet Singh"
   # site keywords
   keywords = ["ayurveda"]
-  images = ["/logo.png"]
+  images = ["/manpreet_image.jpg"]
+  optimizeImages = true
+  enablePWA = false
+  # [Experimental] cache remote images in markdown, more info: https://github.com/HEIGE-PCloud/DoIt/pull/860#issue-1574342372
+  cacheRemoteImages = true
+  # [Experimental] resize method for srcset attribute in optimizeImages, more info: https://gohugo.io/content-management/image-processing/#image-processing-options
+  srcsetSmallResizeMethod = "700x webp Lanczos q75"
+  srcsetDefaultResizeMethod = "1200x webp Lanczos q75"
+  srcsetLargeResizeMethod = "2000x webp Lanczos q75"
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "DoIt"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
+  [params.header]
+    #  Theme change mode
+    # theme change mode ("switch", "select")
+    themeChangeMode = "select"
+    #  Header title config
+    [params.header.title]
+      # URL of the LOGO
+      logo = "/healthcare.png"
+      # title name
+      name = "Dr Manpreet Singh"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      #  whether to use typeit animation for title name
+      typeit = false
+  [params.footer]
+    enable = true
+    #  Custom content (HTML format is supported)
+    custom = ''
+    #  whether to show Hugo and theme info
+    hugo = false
+    #  Hosted on (HTML format is supported)
+    # <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+    hostedOn = 'github'
+    #  whether to show copyright info
+    copyright = true
+    #  whether to show the author
+    author = true
+    # Site creation time
+    since = 2019
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  [params.page]
+    #  whether to hide a page from home page
+    hiddenFromHomePage = false
+    #  whether to hide a page from search results
+    hiddenFromSearch = false
+    #  whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    #  whether to enable the ruby extended syntax
+    ruby = true
+    #  whether to enable the fraction extended syntax
+    fraction = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = true
+    #  configure the link to the source file of the post
+    linkToSource = false
+    # "https://github.com/user/repo/blob/main/{path}"
+    #  configure the link to edit the post
+    linkToEdit = false
+    # "https://github.com/user/repo/edit/main/{path}"
+    # "https://gitlab.com/user/repo/-/edit/main/{path}"
+    # "https://bitbucket.org/user/repo/src/main/{path}?mode=edit"
+    #  configure the link to report issue for the post
+    linkToReport = false
+    # "https://github.com/user/repo/issues/new?title=[bug]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|Url|{url}|%0A|Filename|https://github.com/user/repo/blob/main/{path}|"
+    #  whether to show the full text content in RSS
+    rssFullText = false
+    #  whether to enable series navigation
+    seriesNavigation = true
+    # whether to enable last modified time
+    enableLastMod = false
+    # whether to enable word count
+    enableWordCount = false
+    # whether to enable reading time estimation
+    enableReadingTime = false
+    [params.page.comment]
+      enable = true
+      # Disqus comment config
+      [params.page.comment.disqus]
+        # 
+        enable = true
+        # Disqus shortname to use Disqus in posts
+        shortname = "Manpreet"
+
 [params.author]
     name = "Manpreet Singh"
     email = "Manpreetsingh254.sm@gmail.com"
@@ -66,15 +166,6 @@ theme = 'DoIt'
     Linkedin = false
     Whatsapp = true
 
-[params.page.comment]
-    enable = true
-      # Disqus comment config
-    [params.page.comment.disqus]
-        # DoIt NEW | 0.1.1
-      enable = false
-        # Disqus shortname to use Disqus in posts
-      shortname = "Manpreet"
-
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -104,13 +195,13 @@ theme = 'DoIt'
     title = ""
     weight = 3
   [[menu.main]]
-    identifier = "contact"
+    identifier = "about"
     pre = ""
     post = ""
-    name = "Contact"
-    url = "/contact/"
+    name = "About"
+    url = "/about/"
     title = ""
-    weight = 3
+    weight = 4
 
 # Markup related configuration in Hugo
 [markup]

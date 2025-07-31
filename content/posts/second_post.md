@@ -2,6 +2,10 @@
 date = '2025-07-29T16:14:15Z'
 draft = false
 title = 'Second post'
+
+tags = ["Human Heart"]
+categories = ["Medical"]
+
 +++
 
 # ❤️ The Marvel of the Human Heart
